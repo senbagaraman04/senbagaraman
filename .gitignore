@@ -1,7 +1,8 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
 # compiled output
-/dist
+
+#/dist # dist folder has been excluded inorder to make netlify deployments
 /tmp
 /out-tsc
 # Only exists if Bazel was run
