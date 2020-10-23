@@ -1,7 +1,10 @@
-# Senba
+# Status
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.4.
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d6956389-0ba7-4dc5-911f-2e6e96bab4bb/deploy-status)](https://app.netlify.com/sites/senbagaraman/deploys)
 
+
+# Tech stat
+  Angular 8.3.4, Bootstrap
 
 # Website 
 
