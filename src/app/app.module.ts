@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderProfileComponent } from './header-profile/header-profile.component';
+import { ProjectSectionComponent } from './project-section/project-section.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderProfileComponent
+    HeaderProfileComponent,
+    ProjectSectionComponent
   ],
   imports: [
     BrowserModule,
