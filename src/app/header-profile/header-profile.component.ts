@@ -8,12 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderProfileComponent implements OnInit {
 
   constructor() { }
-  
-  ngOnInit() {
 
-     
-  }
-
-   
+  ngOnInit() { }
 
 }
