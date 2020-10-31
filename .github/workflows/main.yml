@@ -44,28 +44,28 @@ jobs:
             #name: # optional, default is artifact
             # A file, directory or wildcard pattern that describes what to upload
             path: 'dist'
-      - name: Download a Build Artifact
-        uses: actions/download-artifact@v2.0.5
-        #with:
-             # Artifact name
-            #name: # optional
-            # Destination path
-            #path: # optional:  
-      - name: Easy Zip Files
+      - name: Zip Release
   # You may pin to the exact commit or the version.
-  # uses: vimtor/action-zip@5f1c4aa587ea41db1110df6a99981dbe19cee310
-        uses: vimtor/action-zip@v1
+  # uses: TheDoctor0/zip-release@a1afcab9c664c9976ac398fa831eac67bed1eb0e
+        uses: TheDoctor0/zip-release@0.4.1
         with:
-            # Files or directories to zip
-            files: 'dist/senba'
-    # Name of output zip file
-            dest:  'result.zip' # optional, default is result.zip
+               # Filename for archive
+            filename: 'release.zip' # default is release.zip
+    # Base path for archive files
+            path: '/dist/senba' # optional, default is .
+    # Working directory before zipping
+    #directory: # optional, default is .
+    # List of excluded files / directories
+    #exclusions: # optional, default is 
+    # Tool to use for archiving
+    #type: # optional, default is zip
+
         # Uploading the file to s3
       - uses: shallwefootball/s3-upload-action@master
         with:
           aws_key_id: ${{ secrets.AWS_KEY_ID }}
           aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY}}
           aws_bucket: ${{ secrets.AWS_BUCKET }}
-          source_dir: 'dist/senba/result.zip'
-          destination_dir: 'senba'
+          source_dir: 'dist/senba'
+          destination_dir: 'senba.zip'
   
