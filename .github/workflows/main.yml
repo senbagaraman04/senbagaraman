@@ -52,9 +52,9 @@ jobs:
                # Filename for archive
             filename: 'release.zip' # default is release.zip
     # Base path for archive files
-            path: '/dist/senba' # optional, default is .
+            #path:  # optional, default is .
     # Working directory before zipping
-    #directory: # optional, default is .
+            directory: '/dist/senba' # optional, default is .
     # List of excluded files / directories
     #exclusions: # optional, default is 
     # Tool to use for archiving
