@@ -33,7 +33,7 @@ jobs:
           npm install
           echo Installation completed for npm
           echo Starting the build
-          ng build --prod
+          npm build --prod
           echo Build completed
       # Uploading the file to s3
       - uses: shallwefootball/s3-upload-action@master
