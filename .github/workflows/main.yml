@@ -42,7 +42,7 @@ jobs:
           aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY}}
           aws_bucket: ${{ secrets.AWS_BUCKET }}
           source_dir: 'dist/senba'
-          destination_dir: 'senba'
+          destination_dir: 'senba.zip'
       # upload the file into artifacts
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v2.1.4
