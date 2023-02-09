@@ -6,6 +6,7 @@ import { HeaderprofileComponent } from './headerprofile/headerprofile.component'
 import { ProjectsectionComponent } from './projectsection/projectsection.component';
 import { WorkExperienceComponent } from './work-experience/work-experience.component';
 import { CertificationpartComponent } from './certificationpart/certificationpart.component';
+import {MatIconModule} from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { CertificationpartComponent } from './certificationpart/certificationpar
     CertificationpartComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
