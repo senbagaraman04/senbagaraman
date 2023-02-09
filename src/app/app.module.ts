@@ -1,24 +1,20 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {MatToolbarModule, MatIconModule} from '@angular/material';
-import { AppRoutingModule } from './app-routing.module';
+import { BrowserModule } from '@angular/platform-browser';
+
 import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HeaderProfileComponent } from './header-profile/header-profile.component';
-import { ProjectSectionComponent } from './project-section/project-section.component';
+import { HeaderprofileComponent } from './headerprofile/headerprofile.component';
+import { ProjectsectionComponent } from './projectsection/projectsection.component';
+import { WorkExperienceComponent } from './work-experience/work-experience.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderProfileComponent,
-    ProjectSectionComponent
+    HeaderprofileComponent,
+    ProjectsectionComponent,
+    WorkExperienceComponent
   ],
   imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MatToolbarModule,
-    MatIconModule
+    BrowserModule
   ],
   providers: [],
   bootstrap: [AppComponent]
