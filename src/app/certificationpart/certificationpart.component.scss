@@ -1,5 +1,7 @@
 .certification{
 display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
  .certificate-earned{
     margin-right:2px;
  }
