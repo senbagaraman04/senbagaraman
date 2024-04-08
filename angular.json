@@ -73,10 +73,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "senbagaraman:build:production"
+              "buildTarget": "senbagaraman:build:production"
             },
             "development": {
-              "browserTarget": "senbagaraman:build:development"
+              "buildTarget": "senbagaraman:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -84,7 +84,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "senbagaraman:build"
+            "buildTarget": "senbagaraman:build"
           }
         },
         "test": {
