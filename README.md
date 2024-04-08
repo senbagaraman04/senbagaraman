@@ -2,7 +2,7 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/7cdf9f92-7a05-47aa-85a8-307e63d49c19/deploy-status)](https://app.netlify.com/sites/senbagaraman/deploys)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.5.
+Current Version : Angular 17 with material 17
 
 ## Development server
 
